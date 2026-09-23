@@ -11,43 +11,42 @@ Proyecto de análisis de ventas de una tienda retail ficticia. Integra una base 
 
 ## Estructura del proyecto
 
-## Estructura del proyecto
-
 ```
 Analisis_Ventas/
-├── capturas/# Screenshots del dashboard de Power BI
+├── capturas/              Screenshots del dashboard de Power BI
 │   ├── clientes.png
 │   ├── productos_empleados.png
 │   └── resumen.png
-├── data/# Datos de origen
+├── data/                  Datos de origen
 │   ├── clientes.csv
 │   ├── empleados.csv
 │   ├── productos.csv
 │   ├── ventas_raw.xlsx
 │   └── ventas.csv
-├── powerbi/# Dashboard de Power BI
+├── powerbi/               Dashboard de Power BI
 │   └── Dashboard_Ventas.pbix
-├── sql/                    # Scripts SQL
+├── sql/                   Scripts SQL
 │   ├── 01_schema.sql
 │   ├── 02_carga_datos.sql
 │   ├── 03_consultas_analisis.sql
 │   └── 04_vistas_powerbi.sql
 └── README.md
 ```
+
 ## Modelo de datos
 
 Modelo tipo estrella: una tabla de hechos `ventas` conectada a tres tablas de dimensión (`clientes`, `productos`, `empleados`).
 
-​```
+```
 clientes   (cliente_id PK)
 productos  (producto_id PK)   --->   ventas (venta_id PK, FKs)
 empleados  (empleado_id PK)
-​```
+```
+
 - **clientes**: id, nombre, ciudad, segmento, fecha de registro
 - **productos**: id, nombre, categoría, precio unitario
 - **empleados**: id, nombre, región
 - **ventas**: id, fecha, cliente, producto, empleado, cantidad, precio, descuento, monto total
-
 
 ## Cómo reproducirlo
 
