@@ -39,9 +39,9 @@ Analisis_Ventas/
 Modelo tipo estrella: una tabla de hechos `ventas` conectada a tres tablas de dimensión (`clientes`, `productos`, `empleados`).
 
 ​```
-clientes (cliente_id PK) ─┐
-productos (producto_id PK)─┼──► ventas (venta_id PK, FKs)
-empleados (empleado_id PK)─┘
+clientes   (cliente_id PK)
+productos  (producto_id PK)   --->   ventas (venta_id PK, FKs)
+empleados  (empleado_id PK)
 ​```
 - **clientes**: id, nombre, ciudad, segmento, fecha de registro
 - **productos**: id, nombre, categoría, precio unitario
