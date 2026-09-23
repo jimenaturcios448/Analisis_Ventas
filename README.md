@@ -43,7 +43,6 @@ clientes (cliente_id PK) ─┐
 productos (producto_id PK)─┼──► ventas (venta_id PK, FKs)
 empleados (empleado_id PK)─┘
 ​```
-
 - **clientes**: id, nombre, ciudad, segmento, fecha de registro
 - **productos**: id, nombre, categoría, precio unitario
 - **empleados**: id, nombre, región
