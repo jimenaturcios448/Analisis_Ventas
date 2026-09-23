@@ -15,17 +15,17 @@ Proyecto de análisis de ventas de una tienda retail ficticia. Integra una base 
 
 ```
 Analisis_Ventas/
-├── capturas/              # Screenshots del dashboard de Power BI
+├── capturas/# Screenshots del dashboard de Power BI
 │   ├── clientes.png
 │   ├── productos_empleados.png
 │   └── resumen.png
-├── data/                  # Datos de origen
+├── data/# Datos de origen
 │   ├── clientes.csv
 │   ├── empleados.csv
 │   ├── productos.csv
 │   ├── ventas_raw.xlsx
 │   └── ventas.csv
-├── powerbi/                # Dashboard de Power BI
+├── powerbi/# Dashboard de Power BI
 │   └── Dashboard_Ventas.pbix
 ├── sql/                    # Scripts SQL
 │   ├── 01_schema.sql
